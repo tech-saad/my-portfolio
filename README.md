@@ -7,7 +7,6 @@ It showcases my web development projects, skills, and contact information — de
 
 ## 🚀 Live Demo
 🔗 **[View Portfolio](https://tech-saad.github.io/portfolio/)**  
-*(Replace this link with your actual portfolio URL if different.)*
 
 ---
 
