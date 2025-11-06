@@ -32,3 +32,5 @@ It showcases my web development projects, skills, and contact information — de
 1. **Clone this repository**
    ```bash
    git clone https://github.com/tech-saad/portfolio.git
+   cd portfolio
+
