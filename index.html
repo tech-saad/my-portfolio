@@ -1,0 +1,243 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saad — Portfolio</title>
+    <meta
+      name="description"
+      content="Saad's HTML & CSS portfolio — projects, skills, and contact."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <div class="container nav">
+        <a class="brand" href="#welcome-section"
+          ><span class="brand-dot" aria-hidden="true"></span> Saad</a
+        >
+        <label class="burger" for="nav-toggle" aria-label="Open menu">☰</label>
+        <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+        <nav id="navbar" aria-label="Primary">
+          <a href="#welcome-section">Welcome</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a
+            id="profile-link"
+            href="https://github.com/tech-saad"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- WELCOME -->
+      <section id="welcome-section">
+        <div class="container">
+          <h1>Hey, I'm Saad.</h1>
+          <p class="lead">
+            I build responsive pages with modern HTML & CSS. Clean structure,
+            readable styles, and small projects that get better each time.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">See projects</a>
+            <a class="btn" href="#contact">Email me</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="container">
+          <h2 class="title">Projects</h2>
+          <p class="sub">Short, focused builds to practice layout and forms.</p>
+          <div class="grid">
+            <article class="card project-tile">
+              <div class="thumb" aria-hidden="true">Survey Form</div>
+              <h3>Survey Form</h3>
+              <p>
+                Clean, mobile‑friendly form with labels and required fields.
+              </p>
+              <div class="meta">
+                <span class="pill">HTML</span><span class="pill">CSS</span
+                ><span class="pill">Responsive</span>
+              </div>
+              <div class="links">
+                <a
+                  href="https://tech-saad.github.io/survey-form/"
+                  target="_blank"
+                  rel="noopener"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/tech-saad/survey-form"
+                  target="_blank"
+                  rel="noopener"
+                  >Code</a
+                >
+              </div>
+            </article>
+
+            <article class="card project-tile">
+              <div class="thumb" aria-hidden="true">Landing Page</div>
+              <h3>Product Landing Page</h3>
+              <p>Simple hero, features, and CTA using Flexbox.</p>
+              <div class="meta">
+                <span class="pill">HTML</span><span class="pill">CSS</span
+                ><span class="pill">Flexbox</span>
+              </div>
+              <div class="links">
+                <a
+                  href="https://tech-saad.github.io/product-landing-page/"
+                  target="_blank"
+                  rel="noopener"
+                  >Live</a
+                >
+                <a
+                  href="https://github.com/tech-saad/product-landing-page"
+                  target="_blank"
+                  rel="noopener"
+                  >Code</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="container">
+          <h2 class="title">Skills</h2>
+          <div class="grid" style="grid-template-columns: repeat(3, 1fr)">
+            <div class="card">
+              <strong>Core</strong>
+              <div class="meta" style="margin-top: 8px">
+                <span class="pill">HTML5</span>
+                <span class="pill">CSS3</span>
+                <span class="pill">Responsive</span>
+              </div>
+            </div>
+            <div class="card">
+              <strong>Layout</strong>
+              <div class="meta" style="margin-top: 8px">
+                <span class="pill">Flexbox</span>
+                <span class="pill">Grid</span>
+              </div>
+            </div>
+            <div class="card">
+              <strong>Tools</strong>
+              <div class="meta" style="margin-top: 8px">
+                <span class="pill">Git (basic)</span>
+                <span class="pill">VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container about">
+          <div class="card">
+            <h2 class="title">About</h2>
+            <p>
+              I'm Saad. I like building clean layouts and learning by shipping
+              small projects. I focus on HTML structure, simple CSS, and making
+              sure it looks good on phones first.
+            </p>
+          </div>
+          <aside class="card">
+            <strong>Quick facts</strong>
+            <ul>
+              <li>Comfortable with basic HTML</li>
+              <li>Use Flexbox & Grid for layout</li>
+              <li>Keep CSS readable and small</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2 class="title">Contact</h2>
+          <p class="sub">
+            Send me a message. This form posts to an email service—no JS
+            required.
+          </p>
+          <form
+            action="https://formsubmit.co/s.gabbas1324@gmail.com"
+            method="POST"
+            class="card"
+            style="max-width: 720px"
+          >
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New message from portfolio"
+            />
+            <input type="text" name="_honey" style="display: none" />
+            <div class="field">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Hi Saad!"
+                required
+              ></textarea>
+            </div>
+            <button class="btn primary" type="submit">Send</button>
+          </form>
+
+          <p class="sub" style="margin-top: 10px">
+            Prefer email?
+            <a href="mailto:s.gabbas1324@gmail.com">s.gabbas1324@gmail.com</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div
+        class="container"
+        style="
+          padding-block: 36px;
+          border-top: 1px solid var(--border);
+          color: var(--muted);
+        "
+      >
+        <small>© 2025 Saad • Built with semantic HTML & modern CSS</small>
+      </div>
+    </footer>
+  </body>
+</html>
